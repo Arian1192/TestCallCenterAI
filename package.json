@@ -1,0 +1,30 @@
+{
+  "name": "callcenter-ai",
+  "version": "0.1.0",
+  "private": true,
+  "description": "MVP de agente telefónico con IA para inmobiliaria (ElevenLabs + Inmovilla)",
+  "type": "module",
+  "engines": { "node": ">=20" },
+  "scripts": {
+    "dev": "tsx watch src/index.ts",
+    "start": "node dist/index.js",
+    "build": "tsc -p tsconfig.json",
+    "setup:agent": "tsx scripts/setup-agent.ts",
+    "probar": "tsx scripts/probar-herramientas.ts",
+    "test": "vitest run",
+    "typecheck": "tsc -p tsconfig.json --noEmit"
+  },
+  "dependencies": {
+    "dotenv": "^16.4.5",
+    "fastify": "^5.2.0",
+    "luxon": "^3.5.0",
+    "zod": "^3.25.0"
+  },
+  "devDependencies": {
+    "@types/luxon": "^3.4.2",
+    "@types/node": "^22.10.0",
+    "tsx": "^4.19.0",
+    "typescript": "^5.7.0",
+    "vitest": "^3.0.0"
+  }
+}
